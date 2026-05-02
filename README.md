@@ -2,6 +2,8 @@
 
 > **Know what you actually ate.** Turn your Swiggy order history into a clear, honest picture of your nutrition — no food logging, no guesswork.
 
+**[Live prototype →](https://plate-pulse.vercel.app/plate-pulse-prototype.html)** · **[Architecture →](architecture.md)**
+
 ---
 
 ## What is PlatePulse?
@@ -25,13 +27,23 @@ It connects to your Swiggy account, pulls your order history, enriches each item
 
 ## Dashboard analytics
 
+**Primary — Nutrition**
+
 | View | What you see |
 |------|-------------|
-| **Protein tracker** | Weekly protein intake over the selected date range, plotted day by day |
-| **Macro breakdown** | Weekly totals for protein, carbs, and fats — your real nutritional fingerprint |
-| **Spend analytics** | Weekly food spend trends, avg order value, and cost-per-macro insights |
-| **Cuisine patterns** | Your most-ordered cuisines and how they map to your nutrition goals |
-| **Top nutrition orders** | Highest and lowest macro orders — know your best and worst meals at a glance |
+| **Macro metrics** | At-a-glance cards for protein, calories, carbs, and fats — each with a progress bar vs. your daily goal |
+| **Protein trend** | Weekly protein intake plotted against your target — see the gap clearly, week by week |
+| **Calorie trend** | Daily calorie average per week with a healthy-range band (1,600–2,200 kcal) |
+| **Macro split** | Stacked bar showing % of calories from protein, carbs, and fats each week |
+| **Order highlights** | Your best nutrition order and heaviest meal flagged — know which choices move the needle |
+| **Cuisine patterns** | Most-ordered cuisines mapped to your eating habits |
+
+**Secondary — Habits & Spend**
+
+| View | What you see |
+|------|-------------|
+| **Weekly spend** | ₹ per week on Swiggy Food over the last 6 weeks |
+| **Order frequency** | How often you order, and whether it's changing |
 
 ---
 
@@ -54,6 +66,11 @@ PlatePulse closes that gap. The goal isn't to make people feel bad about orderin
 
 ## Status
 
-Currently in development as a Swiggy Builders Club project. Prototype available — see [`plate-pulse-prototype.html`](plate-pulse-prototype.html).
+Currently in development as a Swiggy Builders Club project.
+
+| Resource | Link |
+|---|---|
+| Live prototype | [plate-pulse.vercel.app/plate-pulse-prototype.html](https://plate-pulse.vercel.app/plate-pulse-prototype.html) |
+| Architecture | [architecture.md](architecture.md) |
 
 Built by [Sid Jagtap](https://linkedin.com/in/siddhant-jagtap) — product at Shopflo, building PlatePulse as a side project because ordering Swiggy 5x/week with zero visibility into your macros is a problem worth solving.
